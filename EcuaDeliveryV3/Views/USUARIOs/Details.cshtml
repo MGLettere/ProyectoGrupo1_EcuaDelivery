@@ -1,0 +1,67 @@
+﻿@model EcuaDeliveryV3.USUARIO
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>USUARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.USU_NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USU_NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USU_APELLIDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USU_APELLIDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USU_CEDULA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USU_CEDULA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USU_TELEFONO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USU_TELEFONO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USU_EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USU_EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USU_CONTRASENA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USU_CONTRASENA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.USU_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
