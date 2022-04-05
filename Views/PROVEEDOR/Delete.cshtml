@@ -1,0 +1,81 @@
+﻿@model EcuaDeliveryV3.PROVEEDOR
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PROVEEDOR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_RUC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_RUC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_TELEFONO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_TELEFONO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_CONTRASENA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_CONTRASENA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRV_DIRECCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRV_DIRECCION)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
